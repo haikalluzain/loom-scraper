@@ -15,7 +15,7 @@ import { verifyQStashSignature, publishFolderJob, type FolderJobPayload } from '
 // This allows processing unlimited videos without timeout issues.
 // =============================================================================
 
-const BATCH_SIZE = 10; // Process 3 videos concurrently
+const BATCH_SIZE = 10; // Process 10 videos concurrently
 const VIDEOS_PER_EXECUTION = 20; // Videos per QStash call (2 batches of 3)
 
 export default async function handler(
