@@ -49,7 +49,7 @@ export async function graphqlClient<T>(
     const controller = new AbortController();
     const timeout_id = setTimeout(
       () => controller.abort(),
-      options?.timeout ?? 8000 // 8 second default timeout (Vercel limit is 10s)
+      options?.timeout ?? 30000 // 30 second default timeout
     );
 
     try {
