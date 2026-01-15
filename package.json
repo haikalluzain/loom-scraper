@@ -1,0 +1,29 @@
+{
+  "name": "loom-scraper",
+  "version": "1.0.0",
+  "description": "Loom video scraper backend for Vercel Serverless Functions",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@9.15.0",
+  "scripts": {
+    "build": "tsc",
+    "lint": "tsc --noEmit",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "@upstash/qstash": "^2.8.4",
+    "node-emoji": "^2.2.0",
+    "postgres": "^3.4.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.0",
+    "@vercel/node": "^3.2.0",
+    "concurrently": "^9.2.1",
+    "local-ssl-proxy": "^2.0.5",
+    "typescript": "^5.6.3",
+    "vercel": "^37.0.0"
+  }
+}
